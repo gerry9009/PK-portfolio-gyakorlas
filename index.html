@@ -20,18 +20,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Poppins Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/base.css" />
+    <link rel="stylesheet" href="./style/header.css" />
   </head>
   <body>
     <!-- Header -->
     <!-- Logo, NAV-->
     <header>
-      <a href="#fooldal">ff</a>
-      <nav>
-        <ul>
-          <li><a href="#fooldal">Főoldal</a></li>
-          <li><a href="#rolam">Rólam</a></li>
-          <li><a href="#portfolio">Portfólió</a></li>
-          <li><a href="#kapcsolat">Kapcsolat</a></li>
+      <a href="#fooldal" class="header-logo">ff</a>
+      <nav class="header-navigacio">
+        <input type="checkbox" id="header-checkbox" class="header-checkbox" />
+
+        <label for="header-checkbox" class="header-label">
+          <span class="checkbox-gomb">
+            <span class="checkbox-vonal"></span>
+          </span>
+        </label>
+
+        <ul class="header-kontener">
+          <li><a class="header-elem" href="#fooldal">Főoldal</a></li>
+          <li><a class="header-elem" href="#rolam">Rólam</a></li>
+          <li><a class="header-elem" href="#portfolio">Portfólió</a></li>
+          <li><a class="header-elem" href="#kapcsolat">Kapcsolat</a></li>
+          <li class="light-mode-container">
+            <button class="js-light-mode">Toggle</button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -82,11 +104,7 @@
         <h2>Portfólió</h2>
         <div class="portolio-kontener">
           <div class="portfolio-elem">
-            <img
-              src="./assets/img/portfolio.jpeg"
-              alt="portfólió"
-              width="500"
-            />
+            <img src="./assets/img/portfolio.jpeg" alt="portfólió" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
               laudantium numquam sapiente vero! Laudantium, soluta.
@@ -101,11 +119,7 @@
             </div>
           </div>
           <div class="portfolio-elem">
-            <img
-              src="./assets/img/portfolio.jpeg"
-              alt="portfólió"
-              width="500"
-            />
+            <img src="./assets/img/portfolio.jpeg" alt="portfólió" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
               laudantium numquam sapiente vero! Laudantium, soluta.
@@ -120,11 +134,7 @@
             </div>
           </div>
           <div class="portfolio-elem">
-            <img
-              src="./assets/img/portfolio.jpeg"
-              alt="portfólió"
-              width="500"
-            />
+            <img src="./assets/img/portfolio.jpeg" alt="portfólió" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
               laudantium numquam sapiente vero! Laudantium, soluta.
@@ -139,11 +149,7 @@
             </div>
           </div>
           <div class="portfolio-elem">
-            <img
-              src="./assets/img/portfolio.jpeg"
-              alt="portfólió"
-              width="500"
-            />
+            <img src="./assets/img/portfolio.jpeg" alt="portfólió" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
               laudantium numquam sapiente vero! Laudantium, soluta.
@@ -201,5 +207,7 @@
       <p>Copyright <span>&copy;</span> 2023 Buglyó Gergő</p>
       <a href="#fooldal"><i class="fa-solid fa-arrow-up"></i></a>
     </footer>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>

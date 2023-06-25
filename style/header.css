@@ -1,0 +1,134 @@
+header {
+  background: var(--color-ui-tertiary);
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color-primary);
+  transition: 0.4s;
+}
+
+.header-logo:hover {
+  color: var(--text-color-secondary);
+  border: 1px solid var(--color-ui-primary);
+}
+
+.header-navigacio {
+  display: flex;
+}
+
+.header-checkbox {
+  display: none;
+}
+
+.header-label {
+  display: block;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.checkbox-gomb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.checkbox-gomb::after,
+.checkbox-gomb::before,
+.checkbox-vonal {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: var(--border-color-primary);
+  transition: 0.8s;
+}
+
+.header-label:hover .checkbox-vonal {
+  transform: scaleX(0.8);
+}
+
+.header-label:hover .checkbox-gomb::after,
+.header-label:hover .checkbox-gomb::before {
+  transform: scaleX(0.6);
+}
+
+.header-kontener {
+  position: absolute;
+  background: var(--color-ui-tertiary);
+  top: 8vh;
+  left: 200vh;
+  right: 0;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.8s;
+}
+
+.header-checkbox:checked ~ .header-kontener {
+  left: 0;
+}
+
+.header-elem {
+  display: block;
+  width: 100vw;
+  text-align: center;
+  padding: 2rem;
+}
+
+.header-elem:hover {
+  background: var(--text-color-primary);
+  color: var(--color-ui-tertiary);
+}
+
+.light-mode-container {
+}
+
+@media (min-width: 768px) {
+  header {
+    align-items: stretch;
+    padding: 0 1rem;
+  }
+
+  .header-logo {
+    align-self: center;
+  }
+
+  .header-label {
+    display: none;
+  }
+
+  .header-kontener {
+    position: static;
+    width: auto;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    transition: 0s;
+  }
+
+  .header-elem {
+    width: auto;
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+  }
+}
