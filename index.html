@@ -31,6 +31,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style/base.css" />
     <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/fooldal.css" />
   </head>
   <body>
     <!-- Header -->
@@ -51,8 +52,13 @@
           <li><a class="header-elem" href="#rolam">Rólam</a></li>
           <li><a class="header-elem" href="#portfolio">Portfólió</a></li>
           <li><a class="header-elem" href="#kapcsolat">Kapcsolat</a></li>
+
+          <!-- LIGHT MODE -->
           <li class="light-mode-container">
-            <button class="js-light-mode">Toggle</button>
+            <label class="header-switch">
+              <input type="checkbox" class="header-light-input js-light-mode" />
+              <span class="header-light-slider header-light-round"></span>
+            </label>
           </li>
         </ul>
       </nav>
@@ -68,8 +74,12 @@
         <div class="fooldal-kontener">
           <h1>Fejlesztő Feri</h1>
           <h2>Frontend Fejlesztő</h2>
-          <a href="#kapcsolat">Kapcsolat</a>
-          <a href="./assets/download/cv.pdf" download>Önéletrajz</a>
+          <div class="fooldal-gombok-kontener">
+            <a href="#kapcsolat" class="fooldal-gomb">Kapcsolat</a>
+            <a href="./assets/download/cv.pdf" class="fooldal-gomb" download
+              >Önéletrajz</a
+            >
+          </div>
         </div>
         <!-- Kép -->
         <div class="fooldal-kep">
