@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="./style/fooldal.css" />
     <link rel="stylesheet" href="./style/rolam.css" />
     <link rel="stylesheet" href="./style/portfolio.css" />
+    <link rel="stylesheet" href="./style/kapcsolat.css" />
   </head>
   <body>
     <!-- Header -->
@@ -167,37 +168,29 @@
       </section>
 
       <!--* Kapcsolat -->
-      <section id="kapcsolat">
+      <section id="kapcsolat" class="kapcsolat">
         <h2>Kapcsolat</h2>
-        <form action="https://formspree.io/f/xyyaalnv" method="POST">
+        <form
+          class="form"
+          action="https://formspree.io/f/xeqwlvkp"
+          method="POST"
+        >
           <input type="text" name="nev" id="nev" placeholder="Név" required />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            required
-          />
-          <textarea
-            name="uzenet"
-            id="uzenet"
-            placeholder="Üzenet"
-            required
-          ></textarea>
-          <input type="submit" value="Küld" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <textarea name="uzenet" id="uzenet" placeholder="Üzenet"></textarea>
+          <input type="submit" value="Küldés" />
         </form>
-
-        <div class="kapcsolat-social">
-          <a href="https://twitter.com/" target="_blank"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-          <a href="https://www.linkedin.com/" target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a href="https://github.com/" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
+        <ul class="social">
+          <li class="social-elem">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li class="social-elem">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li class="social-elem">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </li>
+        </ul>
       </section>
     </main>
 
