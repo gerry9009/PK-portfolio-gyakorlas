@@ -1,0 +1,56 @@
+.portfolio {
+  padding: 10%;
+  text-align: center;
+}
+
+.kontener {
+  text-align: start;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.kartya {
+  max-width: 576px;
+  padding-bottom: 2rem;
+  border: 1px solid var(--border-color-tertiary);
+  box-shadow: 0rem 0rem 0.2rem var(--border-color-primary);
+  transition: 0.6s;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.kartya:hover {
+  border: 1px solid var(--border-color-primary);
+  box-shadow: 0.2rem 0.2rem 1rem var(--border-color-primary);
+}
+
+.kartya img {
+  filter: grayscale(1);
+  transition: 1s;
+}
+
+.kartya:hover img {
+  filter: grayscale(0);
+}
+
+.kartya p {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.kartya a {
+  padding: 1rem;
+  font-size: 1.5rem;
+  transition: 0.6s;
+  display: inline-block;
+}
+
+.kartya a:hover {
+  color: var(--color-ui-primary);
+  transform: rotate(360deg) scale(1.2);
+}
