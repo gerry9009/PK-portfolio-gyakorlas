@@ -1,0 +1,94 @@
+.rolam {
+  text-align: center;
+  padding: 10%;
+}
+
+.rolam-bemutatkozas {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.rolam-bemutatkozas p {
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+
+.rolam-bemutatkozas span {
+  font-weight: 700;
+  transition: 0.8s;
+}
+
+.rolam:hover h2,
+.rolam:hover span {
+  color: var(--text-color-secondary);
+}
+
+/* TECH RÉSZ ANIMÁCIÓJA */
+.rolam-tech {
+  /* EZ CSAK SEGÉD 
+    border: 2px solid white;
+    */
+  display: flex;
+  justify-content: space-around;
+  font-size: 5rem;
+  padding-top: 4rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.rolam-tech p {
+  /* EZ CSAK SEGÉD 
+    border: 2px solid white;
+    */
+  transition: 0.2s;
+  padding: 2rem 2rem 0;
+  position: relative;
+}
+
+.rolam-tech i {
+  /* EZ CSAK SEGÉD 
+    border: 2px solid white;
+    */
+  transition: transform 0.8s ease, color 0.2s;
+  padding: 1rem;
+  position: relative;
+  z-index: 4;
+  background: var(--canvas-color);
+}
+
+.rolam-tech:hover p:first-child {
+  color: rgba(234, 88, 39);
+}
+
+.rolam-tech:hover p:nth-child(2) {
+  color: rgba(0, 74, 224);
+}
+
+.rolam-tech:hover p:last-child {
+  color: rgba(240, 167, 62);
+}
+
+.rolam-tech p:hover i {
+  transform: translateY(-2.5rem);
+}
+
+.rolam-tech p::before {
+  content: "HTML";
+  position: absolute;
+  font-size: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  color: var(--text-color-primary);
+}
+
+.rolam-tech p:nth-child(2)::before {
+  content: "CSS";
+}
+.rolam-tech p:last-child::before {
+  content: "JS";
+}
